@@ -1,0 +1,52 @@
+/* Your CSS goes here */
+
+#instructions {
+  border: 1px solid #464444;
+/*  border: 10px solid purple;
+  border-bottom: 4px dashed red;
+  border-left-color: rgba(40,40,120,1);*/
+  margin: 2em;
+  padding: 1em;
+  background-color: white;
+  width: 600px;
+}
+
+body {
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+input, textarea {
+    background-color : rgb(247, 220, 59); 
+    background-color : rgba(247, 220, 59, .7); 
+    border: 1px solid #464444;
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: .1em .2em;
+    text-align: center;
+}
+
+#last-name {
+    font-weight: bold;
+}
+
+#submit {
+    background-color : rgba(247, 220, 59, .7); 
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+    font-size: .9em;
+    padding: .75em;
+    border: 1px solid #464444;
+    cursor: pointer;
+    transition: .2s;
+    margin-left: 30vw;
+    font-weight: bold;
+}
+
+#submit:hover {
+  background-color : rgba(247, 220, 59, 1); 
+  border: 1px solid rgba(40, 40, 60, 1);
+  transition: .2s;
+  transform: scale(1.3);
+}
+
+/*https://www.w3schools.com/cssref/default.asp*/

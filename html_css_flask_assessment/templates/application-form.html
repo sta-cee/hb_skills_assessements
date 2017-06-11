@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Application Form{% endblock %}
+
+{% block content %}
+
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <h3>Application Form</h3>
+    <form action="/application-success" method="GET">
+    <div id="instructions"> Fill out the information below and click the "Submit My Application" button.</div>
+        First Name: <input type="text" name ="firstname" placeholder="Jane"><br><br>
+        Last Name: <input id="last-name" type="text" name="lastname" placeholder="Smith" ><br><br>
+        Salary Requirements:<input type="number" value="70000" step="1000" name ="salary"><br><br>
+        I'm applying for:
+          <select name="job">
+            {% for job in job_selection %}
+              <option value='{{ job }}'>{{ job }}</option>
+            {% endfor %}
+          </select><br><br>  
+
+<!--      <select name="job">
+            {#% for job,job_title in job_selection.items() %#}
+              {# <option value={{ job }}>{{ job_title }}</option> #}
+            {#% endfor %#}
+          </select><br><br>   -->
+
+          <input type="submit" id="submit" value="Submit My Application" method="GET">
+      </form>
+
+{% endblock %}

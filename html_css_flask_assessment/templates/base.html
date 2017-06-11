@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>{% block title %} Application App {% endblock %}</title>
+    <style> 
+        body {
+            padding-left: 20px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+  <h1>Job Application</h1><br>
+  {% block content %} PAGE CONTENT {% endblock %}
+
+  <br><br><br><footer><h6>Copyright 2017 CompanyName</h6></footer>
+
+</body>
+</html>
