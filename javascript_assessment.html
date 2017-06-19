@@ -81,7 +81,9 @@
 
 <script>
   "use strict";
+
   // code here for above problem
+
   var submitForm = document.getElementById('prevent-form-submission-form');
 
   function preventSubmit(evt) {
@@ -232,9 +234,7 @@ getSumButton.addEventListener('click', getSum);
 
   $('#kittenz-rule').on('dblclick', changeImage); 
 
-
 // https://stackoverflow.com/questions/1115858/jquery-switching-between-several-images-on-click
-
 
 </script>
 
@@ -265,8 +265,8 @@ getSumButton.addEventListener('click', getSum);
 </fieldset>
 
 <script>
-console.log('hey')
   "use strict";
+
   // // put your code here
 
   var randomNum = 0
@@ -274,7 +274,6 @@ console.log('hey')
   var playGame = function(evt) {
     playButton.disabled = true;
     randomNum = Math.floor(Math.random() * 10) + 1;
-    // console.log(randomNum)
     var guessField = document.getElementById('number-guessed').disabled = false;
     var guessButton = document.getElementById('try-this-number').disabled = false;
   }
@@ -366,23 +365,13 @@ console.log('hey')
 
   // put your code here
 
-  // 1. Get submit button element
-  // 2. Add event listener on button to run function
-  // 3. Define function
-  // 4. Function makes ajax request to /t-rex-attack.json
-  // 4.5 Make sure form value is 'attack-target', store results variable from that route
-  // 5. Send results variable results object to showTRexResults
-
   function makeRequest(evt) {
     evt.preventDefault()
-    console.log('hellooooooo')
     $.post('/t-rex-attack.json', $('#t-rex-form').serialize(), showTRexResults)
 
   }
 
-  // var attackButton = document.getElementById('attack')
   var attackButton = $('#attack');
-  // attackButton.addEventListener('click', makeRequest);
   $('#attack').on('click', makeRequest);
 
 // https://stackoverflow.com/questions/1960240/jquery-ajax-submit-form
