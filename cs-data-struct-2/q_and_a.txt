@@ -1,0 +1,79 @@
+---------
+Recursion
+---------
+
+1. In your own words, what is recursion?
+    - Recursion is a programming technique where a function calls itself. 
+
+2. Why is it necessary to have a base case?
+    - So the function knows when to stop running. 
+
+
+------
+Graphs
+------
+
+
+1. What is a graph?
+    - Graphs are a computer-science data structure of interrelated nodes.
+
+2. How is a graph different from a tree?
+    - Graphs can contain loops (“cycles”).
+    - The relationships can be directed or un-directed.
+
+3. Give an example of something that would be good to model with a graph.
+    - Social networks
+
+
+----------------------------------------
+Performance of Different Data Structures
+----------------------------------------
+
+
+Data Structure                   Index   Search  Add-R   Add-L    Pop-L   Pop-R
+Python List (Array)               O(1)    O(n)    O(1)    O(n)    O(n)    O(1)  
+Linked List                       O(n)    O(n)    O(1)    O(1)    O(1)    O(n)            
+Doubly-Linked List                O(n)    O(n)    O(1)    O(1)    O(1)    O(1)         
+Queue (as Array)                   X        X     O(1)     X      O(n)     X
+Queue (as LL or DLL)               X        X     O(1)     X      O(1)     X
+Stack (as Array, LL, or DLL)       X        X     O(1)     X       X      O(1)
+Deque (as DLL)                     X        X     O(1)    O(1)    O(1)    O(1)
+
+--------------------------------------------------------------------------------
+
+Data Structure          Get       Add       Delete    Iterate       Memory
+Dictionary (Hash Map)   O(1)      O(1)      O(1)       O(n logn)    medium
+Set (Hash Map)          O(1)      O(1)      O(1)       O(n log n)   medium     
+Binary Search Tree      O(log n)  O(log n)  O(log n)   O(n)         efficient       
+Tree                    O(n)      O(1)      O(1)       O(n)         efficient
+
+
+
+-------
+Sorting
+-------
+
+
+1. Describe in words how the Bubble Sort algorithm works.
+    - Bubble Sort sorts items in place.
+    - Compare each item in a list to the item next to it.
+    - If necessary, swap the items so that the largest one is on the right.
+    - Continue until you've compared all items in a list.
+    - Runtime: O(n^2)
+
+2. Describe in words how the Merge Sort algorithm works.
+    - Start with two sorted lists
+    - Initialize new, empty list for results
+    - Compare first element of each sorted list
+    - Figure out which element is lower and add it to the results list
+    - Continue comparing 1st elements of each list until you finish one list
+    - Append the remaining items from the other, unfinished list to results list
+    - Runtime: O(n log n)
+
+3. Describe in words how the Quick Sort algorithm works.
+    - Best use case: for random data
+    - Operates on the idea of a partition.
+    - That is: there is a ‘pivot’ and we can move all the numbers lower than the
+    pivot number to the beginning of the list and move all the numbers bigger 
+    than the pivot to the right of the pivot number.
+    - Runtime: O(n log n)
